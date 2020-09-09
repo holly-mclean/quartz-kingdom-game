@@ -3,10 +3,10 @@
 # Date: August 2017
 # Description: Makefile for final project.
 
-hollygame: main.o menu.o Space.o Courtyard.o Library.o Grounds.o Gardens.o \
+quartzkingdom: main.o menu.o Space.o Courtyard.o Library.o Grounds.o Gardens.o \
 	Entryway.o GreatHall.o Win.o Lose.o
 	g++ -std=c++11 -g main.o menu.o Space.o Courtyard.o Library.o Grounds.o \
-	Gardens.o Entryway.o GreatHall.o Win.o Lose.o -o hollygame
+	Gardens.o Entryway.o GreatHall.o Win.o Lose.o -o quartzkingdom
 
 main.o: main.cpp
 	g++ -std=c++11 -c -g main.cpp
@@ -39,4 +39,4 @@ Lose.o: Lose.hpp Lose.cpp
 	g++ -std=c++11 -c -g Lose.cpp
 
 clean:
-	rm *.o hollygame
+	rm *.o quartzkingdom
